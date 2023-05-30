@@ -151,5 +151,59 @@ while (menu < 7) {
             console.log(`el valor de su compra es :${valorCompra}`)
             menuInicio()
         }
-    } 
+    }else if (menu==6) {
+        contadorSeis+=1
+        // ejercicio 6
+        let notaUno = parseFloat(prompt("ingrese nota uno "))
+        let notaDos = parseFloat(prompt("ingrese nota dos "))
+        let notaTres = parseFloat(prompt("ingrese nota tres "))
+        let notaCuatro = parseFloat(prompt("ingrese nota cuatro "))
+        let notaUnoIncremento
+        let notaDosIncremento
+        let notaTresIncremento
+        let porcentajeNotaUno=notaUno*0.10
+        let porcentajeNotaDos=notaDos*0.20
+        let porcentajeNotaTres=notaTres*0.30
+        let porcentajeNotaCuatro=notaCuatro*0.40
+        let notaDefinitiva=0
+
+        if (notaCuatro==5) {
+            if (notaUno<=4) {
+                notaUnoIncremento=Number(notaUno+1)
+            }else{
+                notaUnoIncremento=5
+            }
+            if (notaDos<=4) {
+                notaDosIncremento=Number(notaDos+1)
+            }else{
+                notaDosIncremento=5
+            }
+            if (notaTres<=4) {
+                notaTresIncremento=Number(notaTres+1)                
+            }else{
+                notaTresIncremento=5;
+            }
+            notaDefinitiva=(notaUnoIncremento*.10)+(notaDosIncremento*.20)+(notaTresIncremento*.30)+(notaCuatro*.40)
+            console.log(`el valor nota definitiva :${notaDefinitiva}`)
+            
+                if (notaDefinitiva>3.5) {
+                    console.log("aprobo la asignatura")
+                }else{
+                    console.log("no aprobo la asignatura")
+                } 
+                menuInicio()   
+        }
+        else{
+            notaDefinitiva=porcentajeNotaUno+porcentajeNotaDos+porcentajeNotaCuatro+porcentajeNotaTres
+
+            if (notaDefinitiva>3.5) {
+                console.log("aprobo la asignatura")
+            }else{
+                console.log("no aprobo la asignatura")
+            }
+            menuInicio()
+        }
+    } else { 
+        num=8   
+    }
 }
