@@ -78,5 +78,20 @@ while (menu < 7) {
         area=pi*(radio*radio) 
         console.log("el area del circulo es:"+area)
         menuInicio()
+    } else if (menu==3) {
+        contadorTres+=1    
+        // ejercicio 3 
+        let cateto1,cateto2,cateto3
+        cateto1= parseInt(prompt("ingrese medida del cateto 1"))
+        cateto2= parseInt(prompt("ingrese medida del cateto 2"))
+        cateto3= parseInt(prompt("ingrese medida del cateto 3"))
+        if (cateto1==cateto2 && cateto2==cateto3) {
+            console.log("es un triangulo equilatero")
+        }else if (cateto1 == cateto2 && cateto1 != cateto3 || cateto3 == cateto1 && cateto3 != cateto2 || cateto2 == cateto3 && cateto2 != cateto1 ) {
+            console.log("es un triangulo isoseles")
+        }else{
+            console.log("es un triangulo escaleno")
+        }
+        menuInicio()
     }
 }
