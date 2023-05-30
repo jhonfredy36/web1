@@ -93,5 +93,34 @@ while (menu < 7) {
             console.log("es un triangulo escaleno")
         }
         menuInicio()
+    }else if (menu==4) {
+        contadorCuatro+=1
+        // ejercicio 4
+        let numeroUno=parseInt(prompt("ingrese primer numero"))
+        let numeroDos=parseInt(prompt("ingrese segundo numero")) 
+        let i = 1
+        let suma1 = 0
+        let j = 1
+        let suma2 = 0
+
+        while (i < numeroUno) {
+            if(numeroUno % i==0){
+                    suma1 = suma1 + i
+            }
+                i = i + 1
+        }
+        while (j < numeroDos) {
+            if(numeroDos % j==0){
+                suma2 = suma2 + j
+            }
+            j = j + 1
+        }
+        if (suma1 == numeroDos && suma2 == numeroUno){
+            console.log(`los numeros  ${numeroUno} y  ${numeroDos} son amigos `)
+            menuInicio()
+        } else {
+            console.log(`los numeros  ${numeroUno} y  ${numeroDos} no son amigos `)
+            menuInicio()
+        }
     }
 }
