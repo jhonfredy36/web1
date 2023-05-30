@@ -207,3 +207,55 @@ while (menu < 7) {
         num=8   
     }
 }
+document.write(`el ejercicio 1 :${contadorUno}`)
+document.write("<br>")
+document.write(`el ejercicio 2 :${contadorDos}`)
+document.write("<br>")
+document.write(`el ejercicio 3 :${contadorTres}`)
+document.write("<br>")
+document.write(`el ejercicio 4 :${contadorCuatro}`)
+document.write("<br>")
+document.write(`el ejercicio 5 :${contadorCinco}`)
+document.write("<br>")
+document.write(`el ejercicio 6 :${contadorSeis}`)
+document.write("<br>")
+
+if (contadorUno>contadorDos&&contadorUno>contadorTres&&contadorUno>contadorCuatro&&    contadorUno>contadorCinco&&contadorUno>contadorSeis) {
+    document.write(`el ejercicio que mas se ejecuto fue la primera con :${contadorUno} veces`)
+    document.write("<br>")
+} else if(contadorDos>contadorUno&&contadorDos>contadorTres&&contadorDos>contadorCuatro&&  contadorDos>contadorCinco&&contadorDos>contadorSeis){
+    document.write(`el ejercicio que mas se ejecuto fue el segundo con :${contadorDos} veces`)
+    document.write("<br>")
+}else if(contadorTres>contadorUno&&contadorDos<contadorTres&&contadorTres>contadorCuatro&&  contadorTres>contadorCinco&&contadorTres>contadorSeis){
+    document.write(`el ejercicio que mas se ejecuto fue el tercero con :${contadorTres} veces`)
+    document.write("<br>")
+}else if(contadorCuatro>contadorUno&&contadorCuatro>contadorDos&&contadorTres<contadorCuatro&&  contadorCuatro>contadorCinco&&contadorCuatro>contadorSeis){
+    document.write(`el ejercicio que mas se ejecuto fue el cuarto con :${contadorCuatro} veces`)
+    document.write("<br>")
+}else if(contadorCinco>contadorUno&&contadorCinco>contadorDos&&contadorTres<contadorCinco&&contadorCuatro<contadorCinco&&contadorCinco>contadorSeis){
+    document.write(`el ejercicio que mas se ejecuto fue el quinto con :${contadorCinco} veces`)
+    document.write("<br>")
+}else if(contadorSeis>contadorUno&&contadorSeis>contadorDos&&contadorTres<contadorSeis&&contadorCuatro<contadorSeis&&contadorSeis>contadorCinco){
+    document.write(`el ejercicio que mas se ejecuto fue el sesto con :${contadorSeis} veces`)
+    document.write("<br>")
+}
+
+if (contadorUno<contadorDos&&contadorUno<contadorTres&&contadorUno<contadorCuatro&&    contadorUno<contadorCinco&&contadorUno<contadorSeis) {
+    document.write(`el ejercicio que menos se ejecuto fue la primera con :${contadorUno} veces`)
+    document.write("<br>")
+} else if(contadorDos<contadorUno&&contadorDos<contadorTres&&contadorDos<contadorCuatro&&  contadorDos<contadorCinco&&contadorDos<contadorSeis){
+    document.write(`el ejercicio que menos se ejecuto fue el segundo con :${contadorDos} veces`)
+    document.write("<br>")
+}else if(contadorTres<contadorUno&&contadorDos>contadorTres&&contadorTres<contadorCuatro&&  contadorTres<contadorCinco&&contadorTres<contadorSeis){
+    document.write(`el ejercicio que menos se ejecuto fue el tercero con :${contadorTres} veces`)
+    document.write("<br>")
+}else if(contadorCuatro<contadorUno&&contadorCuatro<contadorDos&&contadorTres>contadorCuatro&&  contadorCuatro<contadorCinco&&contadorCuatro<contadorSeis){
+    document.write(`el ejercicio que menos se ejecuto fue el cuarto con :${contadorCuatro} veces`)
+    document.write("<br>")
+}else if(contadorCinco<contadorUno&&contadorCinco<contadorDos&&contadorTres>contadorCinco&&contadorCuatro>contadorCinco&&contadorCinco<contadorSeis){
+    document.write(`el ejercicio que menos se ejecuto fue el quinto con :${contadorCinco} veces`)
+    document.write("<br>")
+}else if(contadorSeis<contadorUno&&contadorSeis<contadorDos&&contadorTres>contadorSeis&&contadorCuatro>contadorSeis&&contadorSeis<contadorCinco){
+    document.write(`el ejercicio que menos se ejecuto fue el sesto con :${contadorSeis} veces`)
+    document.write("<br>")
+}
