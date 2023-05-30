@@ -122,5 +122,34 @@ while (menu < 7) {
             console.log(`los numeros  ${numeroUno} y  ${numeroDos} no son amigos `)
             menuInicio()
         }
-    }
+    }else if (menu==5) {
+        contadorCinco+=1
+        // ejercicio 5
+        let cantidadProducto=parseInt(prompt("ingrese la cantidad de productos comprados"))
+        let valorProducto=parseFloat(prompt("ingrese el valor unitario del producto"))
+        let iva=(cantidadProducto*valorProducto*0.19)
+        let valorCompra=(cantidadProducto*valorProducto)+iva
+        let valorAPagar
+
+        if(valorCompra>500000 && valorCompra<=1000000){
+            valorAPagar=(cantidadProducto*valorProducto)
+
+            console.log(`el valor de su compra es :${valorCompra}`)
+            console.log(`el valor de su iva es :${iva}`)
+            console.log("el iva se retorna a usted por que su compra fue superior a 500.000")
+            console.log(`el valor a pagar es :${valorAPagar}`)
+            menuInicio()
+        }else if(valorCompra>1000000){
+            valorAPagar=(cantidadProducto*valorProducto)-(cantidadProducto*valorProducto*0.10) 
+            console.log(`el valor de su compra es :${valorCompra}`)
+            console.log(`el valor de su iva es :${iva}`)
+            console.log("el iva se retorna a usted por que su compra fue superior a 500.000 y ademas se le hace un 10% de descuento sobre su compra por comprar mas de 1.000.000 ")
+            console.log(`el valor a pagar es :${valorAPagar}`)
+            menuInicio()
+        }else{
+            console.log(`el valor de su iva es :${iva}`)
+            console.log(`el valor de su compra es :${valorCompra}`)
+            menuInicio()
+        }
+    } 
 }
